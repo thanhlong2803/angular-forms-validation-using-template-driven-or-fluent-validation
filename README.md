@@ -10,4 +10,4 @@
 
 **Forms validation using template-driven** 
 
-How to setup
+How to set up form validation in angular using Template-Driven. The registration form contains definitions of the field and types: first name, last name, email, password, confirm password. All fields are required

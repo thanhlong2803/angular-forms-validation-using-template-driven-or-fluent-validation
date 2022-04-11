@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/" />
+    <title>Angular forms validation template driven or fluent validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap css -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="card m-3">
+        <h5 class="card-header">Are you choice form validation and fluent validation ?</h5>
+        <div class="card-body">
+            <div class="radio">
+                <label>
+                    <input type="radio" value="true" [checked]="isChoice ===true" id="formValidation"
+                        (change)="onSelectionChange(true)" name="Validation"><small> Form validation</small>
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" value="false" [checked]="isChoice === false" id="fluentValition"
+                        (change)="onSelectionChange(false)" name="Validation"><small> Fluent validation</small>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <form-validation *ngIf="isChoice === true"></form-validation>
+    <fluent-validation *ngIf="isChoice === false"></fluent-validation>
+
+    <router-outlet></router-outlet>
+</body>
+
+</html>

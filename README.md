@@ -1,2 +1,2 @@
-# show-form-validation-in-angular
-Angular 8 - Show Forms Validation in angular Example
+# Angular forms validation using template-driven  or fluent valdation
+Angular forms validation using template-driven or fluent valdation

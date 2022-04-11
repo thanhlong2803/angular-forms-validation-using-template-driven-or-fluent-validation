@@ -10,8 +10,10 @@ export class FormValidationComponent implements OnInit {
   model: any = {};
 
   constructor() { }
+  
   ngOnInit() {
   }
+
   onSubmit() {
     alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.model, null, 4));
   }
